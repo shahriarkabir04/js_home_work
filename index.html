@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <!-- google fonts -->
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Bootstrap 4 Basic HTML Template</title>
+</head>
+
+<body>
+    <h1 id="new">I am a Full Stack Web Developer</h1>
+    <h1 id="date">See your current time</h1>
+    <button type="button" class="btn btn-danger" onclick="newFunction()">Click to Change</button>
+    <button type="button" onclick="dateWise()" class="btn btn-danger">See Date</button>
+
+    <h4>Show your magic</h4>
+    <button class="btn btn1 btn-danger">Hide</button>
+    <button class="btn btn2 btn-danger">Show</button>
+    <!-- jquery, bootstrap, custom js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        function newFunction(){
+            document.getElementById('new').innerHTML="I have learnt HTML, CSS, BOOTSTRAP, JS, JQ etc."
+        }
+         function dateWise(){
+            document.getElementById('date').innerHTML=Date();
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.btn1').click(function(){
+                $('h4').Hide();
+            });
+            $('.btn2').Click(function(){
+                $('h4').Show();
+            });
+        });
+    </script>
+
+</body>
+</html>
